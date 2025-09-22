@@ -1,0 +1,62 @@
+/* estilos.css */
+
+/* Fondo general y tipografía */
+body {
+    background-color: #1e1e2f; /* oscuro, agradable a la vista */
+    color: #e0e0e0; /* texto claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezado principal */
+h1 {
+    text-align: center;
+    color: #ffcc00; /* un amarillo para resaltar */
+    margin-bottom: 30px;
+}
+
+/* Lista de actividades */
+ul {
+    list-style: none; /* quitar viñetas por defecto */
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Elementos de la lista */
+ul li {
+    background-color: #2c2c44; /* un azul oscuro */
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Enlaces dentro de la lista */
+ul li a {
+    color: #ffcc00; /* amarillo que resalta sobre fondo oscuro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Efecto hover */
+ul li:hover {
+    background-color: #3a3a5a;
+    transform: scale(1.03);
+}
+
+ul li a:hover {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    ul li {
+        padding: 10px 15px;
+    }
+}

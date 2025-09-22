@@ -1,0 +1,4 @@
+INICIAR: 
+    docker-compose up -d --build
+TANCAR:
+    docker-compose down
