@@ -18,6 +18,8 @@
         <li><a href="activitats/8.php">Formulari de Contacte amb Validació</a></li>
         <li><a href="activitats/9.php">Formulari amb Validació i Missatges d'Error</a></li>
         <li><a href="activitats/10.php">Pujar Fitxers i Seleccionar Opció</a></li>
+        <li><a href="activitats/11.php">Comptador de visites amb sessió</a></li>
+        <li><a href="activitats/12_13.php">Cistella de la Compra (I): Afegir Productes</a></li>
     </ul>
 </body>
 </html>
