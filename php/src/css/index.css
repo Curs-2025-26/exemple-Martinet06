@@ -1,62 +1,79 @@
-/* estilos.css */
+/* index.css */
 
-/* Fondo general y tipografía */
+/* Estil general */
 body {
-    background-color: #1e1e2f; /* oscuro, agradable a la vista */
-    color: #e0e0e0; /* texto claro */
+    background-color: #121212; /* fosc profund */
+    color: #e0e0e0; /* text clar */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
-/* Encabezado principal */
+/* Títol principal */
 h1 {
     text-align: center;
-    color: #ffcc00; /* un amarillo para resaltar */
+    color: #ffcc00; /* groc que ressalta */
     margin-bottom: 30px;
+    font-size: 2em;
+    letter-spacing: 1px;
 }
 
-/* Lista de actividades */
-ul {
-    list-style: none; /* quitar viñetas por defecto */
-    padding: 0;
-    max-width: 600px;
+/* Taula */
+table {
+    border-collapse: separate; /* per poder usar border-radius */
+    border-spacing: 12px;      /* separació entre cel·les */
     margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
 }
 
-/* Elementos de la lista */
-ul li {
-    background-color: #2c2c44; /* un azul oscuro */
-    margin: 10px 0;
-    padding: 15px 20px;
-    border-radius: 10px;
+/* Cel·les */
+td {
+    background: linear-gradient(145deg, #1f1f2e, #2c2c44);
+    border: 1px solid #2e2e3e;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     transition: all 0.3s ease;
+    min-height: 60px;
 }
 
-/* Enlaces dentro de la lista */
-ul li a {
-    color: #ffcc00; /* amarillo que resalta sobre fondo oscuro */
+/* Cel·les buides */
+td:empty {
+    background: #181824;
+    border: 1px dashed #333;
+    box-shadow: none;
+}
+
+/* Enllaços */
+td a {
+    color: #ffcc00;
     text-decoration: none;
     font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: color 0.3s ease;
 }
 
-/* Efecto hover */
-ul li:hover {
-    background-color: #3a3a5a;
-    transform: scale(1.03);
+/* Hover */
+td:hover {
+    background: linear-gradient(145deg, #2c2c44, #3a3a5a);
+    transform: scale(1.05);
 }
 
-ul li a:hover {
+td a:hover {
     color: #ffffff;
 }
 
 /* Responsive */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
+@media (max-width: 700px) {
+    table {
+        border-spacing: 8px;
     }
-
-    ul li {
-        padding: 10px 15px;
+    td {
+        padding: 12px;
+        font-size: 0.9em;
     }
 }
