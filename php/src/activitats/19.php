@@ -1,8 +1,8 @@
 <?php
 require_once '../../vendor/autoload.php';
 
-use App\Usuari;
+use App\Producte;
 
 echo "<a href=\"../index.php\">Tornar al inici</a><br>";
-$usuari = new Usuari("Marti", "mmollsegui@gmail.com", "1234");
-$usuari->saluda();
+$producte = new Producte("Televisor", 500);
+$producte->mostrar();
